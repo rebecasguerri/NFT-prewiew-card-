@@ -11,125 +11,208 @@
     src: url('fontes/static/Outfit-Light.ttf') format('truetype');
 }
 
-
-body{
-    background-color:  hsl(217, 54%, 11%);
-    font-family: 'outfit';
-    font-size: 16px;
-    width: 500px;
-    margin: auto;
-    padding-top: 65px;
-
+/* colors */
+:root{
+    --Softblue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --verydarkblue1: hsl(217, 54%, 11%); /* main GB */
+    --verydarkblue2: hsl(216, 50%, 16%); /* card GB */
+    --verydarkblue3: hsl(215, 32%, 27%); /* line */
+    --White: hsl(0, 0%, 100%);   
 }
 
-main img{
-    
-    max-width: 282px;
-    max-height: 280px;
-    border-radius: 10px;
-    margin-top: 7px;
-
+* {
+    margin: 0;
+    padding: 0;
 }
 
-main{
-    background-color: hsl(216, 50%, 16%);
-    border-radius: 20px;
-    margin: 10px 90px 0px 90px;
-    box-shadow: 2px 2px 70px rgba(0, 0, 0, 0.261);
-    padding-bottom: 10px;
-    padding: 5px 20px 2px 20px;
-}
-
-
-
-h1{
-    color: white;
+body {
+    background-color: var(--verydarkblue1);
+    color: var(--White);
+    font-family: 'Outfit', sans-serif;
     font-size: 18px;
-    font-family: 'outfittitle';
- 
-}
-
-p{
-    color: rgba(255, 255, 255, 0.522);
-    font-size: 14px;
-}
-
-
-
-#icon{
-    color: hsl(178, 100%, 50%);
-    display: inline-block;
-    margin-bottom: 0px;
-}
-
-div{
-    display: inline-block;
-   
-}
-
-div > #clock{
-    color: rgba(255, 255, 255, 0.522);
-    margin-left: 90px;
-    margin-bottom: 0px;
-   
-    
-}
-
-
-#clock{
-    color: rgba(255, 255, 255, 0.522);
-    text-align: right;
-    margin-bottom: 0px;
-
-}
-
-main #linha1{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
     align-items: center;
-    border-bottom: 0.8px solid #ccd0d531;
-    margin: 2px 14px 2px 0px;
-    width: 271px;
+    justify-content: center;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* contenedor main */
+
+.container {
+    border-radius: 0.5rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+    max-width: 300px;
+    background-color: var(--verydarkblue2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__img {
+    margin-bottom: 1.4rem;
+    position: relative;
+}
+
+.container__img img {
+    border-radius: 0.5rem;
+}
+
+.bg {
+    width: 300px;
+    height: 300px;
+    background-color: var(--Softblue);
+    border-radius: 0.5rem;
+    position: absolute;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+  }
+
+.bg img {
+    width: 40px;
+}
+
+.bg:hover {
+    opacity: 1;
+}
+
+a {
+    text-decoration: none;
+    color: var(--White);
+}
+
+a:hover {
+    color:var(--cyan);
+}
+h3 {
+    font-weight:lighter;
+    font-size: 18px;
+    color: hsla(215, 52%, 70%, 0.384);
     
 }
-
-main #username{
-    margin-top: 5px;
+a,
+h3 {
+    align-self: flex-start;
 }
- #username img{
-    width: 34px;
-    border: 2px solid white;
+
+h2 {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+
+span {
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+    font-size: 16px;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+
+/* contenedor datos */
+
+.container__datos {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    min-height: 50px;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid hsla(215, 52%, 70%, 0.267);
+    min-height: 70px;
+}
+
+.container__datos img {
+    width: 12px;
+    margin-right: 7px;
+}
+
+.moneda {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--cyan);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.moneda img,
+.expiracion img,
+.creador img {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.expiracion {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--Softblue);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.expiracion img {
+    width: 16px;
+}
+
+
+/* Contenedor creador */
+
+.creador img {
+    width: 32px;
+    border: 1px solid #fff;
     border-radius: 50%;
-    display: inline-block;
+    margin-right: 17px;
 }
 
- #username #span1 p{
-    color: #8F9088;
-    display: inline-block;
-
-
+.creador {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-  p #span2{
-    color: white;
+.creador a {
+    font-size: 16px;
 }
 
 
-
+/* RODAPÉ LINKS */
 
 .attribution{
     padding-top: 10px;
     font-size: 12px;
     margin-left: 50px;
-   
-   
-    
+  
 }
 
 .attribution > a{
-    color: hsl(178, 100%, 50%);
+    color: var(--cyan);
     text-decoration: none;
     border-radius: 15px;
 }
 
 .attribution > a:hover{
-    background-color: hsl(216, 50%, 16%);
+    background-color: var(--verydarkblue2);
+    padding: 2px;
 }

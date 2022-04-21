@@ -7,39 +7,52 @@
     <link rel="stylesheet" href="style.css">
     <title>Frontend Mentor | NFT preview card component</title>
  </head>
-
-
  <body>
-    <main>
-      
-      <img id="imagem-principal" src="images/image-equilibrium.jpg" alt="image equilibrium"
-      > 
-      <h1>Equilibrium #3429</h1>
-      <p>Our Equilibrium collection promotes balance and calm.</p>
-      <p id="icon"> <img src="images/icon-ethereum.svg" alt=""> 0.041 ETH </p> 
-      <div>
-        <p id="clock" > <img src="images/icon-clock.svg" alt=""> 3 days left</p>
+  <main>
+      <section>
+          <article>
+              <div class="container">
+
+                  <div class="container__img">
+                      <a class="bg" href="#"><img src="images/icon-view.svg" alt="eye-icon"></a>
+                      <img src="images/image-equilibrium.jpg" alt="image-equilibrium">
+                      
+                  </div>
+
+                  <a href="#">
+                      <h2>Equilibrium #3429</h2>
+                  </a>
+                  <h3>Our Equilibrium collection promotes balance and calm.</h3>
+                  <div class="container__datos">
+                      <div class="moneda">
+                          <img src="images/icon-ethereum.svg" alt="eth">
+                          <p>0.041 ETH</p>
+                      </div>
+                      <div class="expiracion">
+                          <img src="images/icon-clock.svg" alt="clock">
+                          <p>3 days left</p>
+                      </div>
+                  </div>
+                  <div class="creador">
+                      <img src="images/image-avatar.png" alt="image-avatar">
+                      <p><span>Creation of</span> <a href="#">Jules Wyvern</a></p>
+                  </div>
+
+              </div>
+          </article>
+      </section>
+      <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="#"> Rebeca Sguerri </a>.
+          follow me on <a href="https://github.com/rebecasguerri" target="_blank" rel="external" >github </a>  
       </div>
+  </main>
 
-    
-      <div id="linha1"><span></span></div>
-  
-      <p id="username"> <img src="images/image-avatar.png" alt="user image" width="34px"> 
-      
-        
-         <span id="span1">
-      
-          Creation of  <span id="span2">  Jules Wyvern</span> 
-     </p>
-  </span>
-    </main>
 
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#"> Rebeca Sguerri </a>.
+</body>
 
-      follow me on <a href="https://github.com/rebecasguerri" target="_blank" rel="external" >github </a> 
-        
-    </div>
- </body>
+   
 </html>
+
+
+

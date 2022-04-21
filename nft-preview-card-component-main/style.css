@@ -18,16 +18,16 @@ body{
     font-size: 16px;
     width: 500px;
     margin: auto;
-    padding: 15px;
+    padding-top: 65px;
 
 }
 
-#imagem-principal{
-    margin: none;
-    display: block;
-    margin: auto;
-    padding-top: 20px;
-    border-radius: 10px 10px 10px 10px ;
+main img{
+    
+    max-width: 282px;
+    max-height: 280px;
+    border-radius: 10px;
+    margin-top: 7px;
 
 }
 
@@ -37,11 +37,10 @@ main{
     margin: 10px 90px 0px 90px;
     box-shadow: 2px 2px 70px rgba(0, 0, 0, 0.261);
     padding-bottom: 10px;
-}
-
-section{
     padding: 5px 20px 2px 20px;
 }
+
+
 
 h1{
     color: white;
@@ -60,6 +59,7 @@ p{
 #icon{
     color: hsl(178, 100%, 50%);
     display: inline-block;
+    margin-bottom: 0px;
 }
 
 div{
@@ -70,41 +70,58 @@ div{
 div > #clock{
     color: rgba(255, 255, 255, 0.522);
     margin-left: 90px;
+    margin-bottom: 0px;
    
     
 }
+
+
 #clock{
     color: rgba(255, 255, 255, 0.522);
     text-align: right;
+    margin-bottom: 0px;
 
 }
 
-
-#user{
-    color: rgba(255, 255, 255, 0.818);
-    
-   
-}
-
-#user img{
-    width: 30px;
-    border-color: white;
-    border-style: solid;
-    border-radius: 100%;
-    border-width: 1px;
+main #linha1{
+    align-items: center;
+    border-bottom: 0.8px solid #ccd0d531;
+    margin: 2px 14px 2px 0px;
+    width: 271px;
     
 }
 
-
-#user span{
-   padding-left: 10px;
-   color:hsl(216, 15%, 52%);
+main #username{
+    margin-top: 5px;
 }
+ #username img{
+    width: 34px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+ #username #span1 p{
+    color: #8F9088;
+    display: inline-block;
+
+
+}
+
+  p #span2{
+    color: white;
+}
+
+
+
 
 .attribution{
     padding-top: 10px;
-    font-size: 13px;
-    margin: auto;
+    font-size: 12px;
+    margin-left: 50px;
+   
+   
+    
 }
 
 .attribution > a{

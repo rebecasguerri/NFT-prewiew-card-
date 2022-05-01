@@ -50,6 +50,7 @@ img {
     margin: 0 auto;
     padding: 1.5rem;
     max-width: 300px;
+    max-height: 550px;
     background-color: var(--verydarkblue2);
     display: flex;
     flex-direction: column;
@@ -197,7 +198,12 @@ main {
 }
 
 
-/* RODAPÉ LINKS */
+/* footer area */
+
+footer{
+   align-items: flex-end;
+
+}
 
 .attribution{
     padding-top: 10px;
